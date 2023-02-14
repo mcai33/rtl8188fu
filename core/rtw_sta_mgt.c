@@ -811,6 +811,7 @@ void rtw_free_all_stainfo(_adapter *padapter)
 	}
 
 exit:
+	;
 
 
 }

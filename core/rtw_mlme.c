@@ -82,6 +82,7 @@ sint	_rtw_init_mlme_priv (_adapter* padapter)
 	rtw_init_mlme_timer(padapter);
 
 exit:
+	;
 
 
 	return res;
@@ -141,6 +142,7 @@ void _rtw_free_mlme_priv (struct mlme_priv *pmlmepriv)
 		}
 	}
 exit:
+	;
 }
 
 sint	_rtw_enqueue_network(_queue *queue, struct wlan_network *pnetwork)
@@ -158,6 +160,7 @@ sint	_rtw_enqueue_network(_queue *queue, struct wlan_network *pnetwork)
 	_exit_critical_bh(&queue->lock, &irqL);
 
 exit:	
+	;
 
 
 	return _SUCCESS;
@@ -266,6 +269,7 @@ void _rtw_free_network(struct	mlme_priv *pmlmepriv ,struct wlan_network *pnetwor
 	_exit_critical_bh(&free_queue->lock, &irqL);
 	
 exit:		
+	;
 	
 
 }
@@ -293,6 +297,7 @@ void _rtw_free_network_nolock(struct	mlme_priv *pmlmepriv, struct wlan_network *
 	//_exit_critical(&free_queue->lock, &irqL);
 	
 exit:		
+	;
 
 
 }
@@ -2141,6 +2146,7 @@ void rtw_stassoc_event_callback(_adapter *adapter, u8 *pbuf)
 	
 	
 exit:
+	;
 	
 
 }

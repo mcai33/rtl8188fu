@@ -801,6 +801,7 @@ void usb_read_port_complete(struct urb *purb, struct pt_regs *regs)
 	}	
 
 exit:	
+	;
 	
 }
 
@@ -972,6 +973,7 @@ void usb_read_port_complete(struct urb *purb, struct pt_regs *regs)
 	}	
 
 exit:	
+	;
 	
 	
 }
